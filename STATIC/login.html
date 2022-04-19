@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <title>HOPSICKLEZZ!!</title>
+    <link rel="stylesheet_css" href="styles.css">
+    <!-- thumbnail icon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon folder/favicon-16x16.png">
+    <link rel="manifest" href="icon folder/site.webmanifest"> 
+
+</head>
+
+<body>
+
+    <header> <!-- header portion >> it has 2 sections -->
+
+        <section> <!-- section for home ,store and contact us buttons  -->
+            <nav>
+                <ul>
+                    <li><a href="main.html" >   <button> HOME </button>      </a> </li>
+                    <li><a href="artists.html" target="_blank">   <button> ARTISTS </button>      </a> </li>
+                    <li><a href="contact.html" target="_blank">   <button> CONTACT </button>      </a> </li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <hr>
+
+        <section> <!-- title of the page (HOPSICKLEZZ) -->
+            <header><h1>HOPSICKLEZZ!</h1></header>
+        </section>
+        
+        <hr>
+
+    </header>
+
+
+    <section>
+
+        <h2>LOGIN!</h2>
+        <form id="login-form">
+            <input placeholder="username" type="text" id="username" > <br>
+
+            <input placeholder="password" type="password" id="password" > <br> <br>
+
+            <input type="submit" value="submit">
+
+            
+        </form>
+
+		<script>
+            //getting form
+            const loginForm = document.getElementById("login-form");
+
+            //on submit click event
+            addEventListener('submit', loginUser);
+
+            //registerUser function call & definitation
+            async function loginUser(event){
+                event.preventDefault();
+
+                //get username & password and store it in variables
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+
+                //await for result from fetch api call 
+                const result = await fetch("/login", {
+                    //method & details of sending data to api
+                    method:"POST",
+                    headers: {
+                        "Content-Type": 'application/json'
+                    },
+                    body: JSON.stringify({
+
+                        username,
+                        password
+                    })
+                    //if api call returns ok give user created success else error
+                }).then((res)=> res.json())
+
+                if(result.status === 'ok'){
+                    alert("Welcome Back!");
+                    window.location.replace('main.html');
+                }else{
+                    alert(result.error);
+                }
+            }
+        </script>
+
+		<div>
+
+			<h3>Forgot password>??</h3>
+			<a href="changePass.html"> <button>Click here!</button> </a>
+
+
+		</div>
+
+        <div>
+            <h3>Not yet registered with us?</h3>
+            <h4> Hop on!! , It's free ;) </h4>
+            <a href="register.html"><button>Register!</button></a>
+        </div>
+
+
+
+
+    <hr>
+
+    <footer> <!-- footer section  -->
+
+        <h2>HOPSICKLEZZ!</h2>
+
+        <div>
+            <p>Follow us!! ;] </p>
+
+            <ul>
+                <li> <a href="https://www.youtube.com/" target="_blank"> <button> <img src="Images/youtubelogo.png" alt="Youtube">     </button> </a> </li>
+                <li> <a href="https://www.spotify.com/" target="_blank"> <button> <img src="Images/spotifylogo.png" alt="spotify">     </button> </a> </li>
+                <li> <a href="https://www.instagram.com/" target="_blank"> <button> <img src="Images/instagramlogo1.png" alt="Instagram">   </button> </a> </li>
+            </ul>
+        </div>    
+
+    </footer>
+
+
+</body>
+
+
+
+</html>
+
