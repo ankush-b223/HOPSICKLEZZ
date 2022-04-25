@@ -1,0 +1,13 @@
+.card{
+    width: 33%;
+    border: 1px darkgray solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.card-deck{
+    display: flex;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 10px;
+}

@@ -1,0 +1,57 @@
+input[type="submit"]:hover {
+    background-color: #4caf84;
+}
+.contact {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: #ee8d55;
+    padding: 20px;
+    border: darkgray 1px;
+    border-radius: 5px;
+}
+#contact{
+    background-color: lightgray;
+    padding: 15px 15px 15px 15px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: 500;
+    width: 50%;
+}
+input[type="submit"] {
+    background-color: #dd9260;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+}
+h6 {
+    color: red;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+textarea{
+    border-radius: 5px;
+    width: 80%;
+    height: 55px;
+    padding: 5px;
+}
+span{
+    font-size: medium;
+    color: red;
+}
+.info{
+    padding: 10px;
+    text-align: center;
+}
+.img{
+    margin-top: 5px;
+    padding-top: 5px;
+}

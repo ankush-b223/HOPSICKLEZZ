@@ -4,7 +4,9 @@
 <head>
 
     <title>HOPSICKLEZZ!!</title>
-    <link rel="stylesheet_css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="darkmode.css" />
     <!-- thumbnail icon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
@@ -13,40 +15,15 @@
 
 </head>
 
-<body>
-
-    <link rel="stylesheet" href="darkmode.css" />
-    
-</head>
-<body>
-    <!-- Rounded switch -->
-<label class="switch" >
-  <input type="checkbox" onclick="myFunction()">
-  <span class="slider round"></span>
-</label>
+<body class="light">
      
-   
-  </div>
-  <script>
+    <script>
       function myFunction() {
          var element = document.body;
          element.classList.toggle("dark-mode");
       }
-      </script>
-  <script src="darkmode.js">
-
-
-  </script>
-
-
-
-
-
-
-
-
-
-
+    </script>
+    <script src="darkmode.js"></script>
 
     <script src="script.js"></script> <!-- linking external javascript file -->
 
@@ -55,12 +32,16 @@
 
         <section>
             <!-- section for home ,store and contact us buttons  -->
-            <nav>
-                <ul>
-                    <li><a href="main.html" target="_blank"> <button> HOME </button> </a> </li>
-                    <li><a href="artists.html" target="_blank"> <button> ARTISTS </button> </a> </li>
-                    <li><a href="contact.html"> <button> CONTACT </button> </a> </li>
-                </ul>
+            <nav class="navigation">
+                <a href="main.html" >HOME</a> 
+                <a href="artists.html" target="_blank">ARTISTS</a>
+                <a class="active" href="contact.html" target="_blank">CONTACT</a> 
+                <a class="log" href="login.html" target="_blank" >Login/SignUp</a>
+                <label class="switch" >
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label> 
+                <input type="text" placeholder="Search.."> 
             </nav>
 
         </section>
@@ -78,97 +59,49 @@
 
     </header>
 
-    <nav>
-        <!-- navigation button -->
-        <button>=</button>
-    </nav>
 
     <section>
         <!-- section for body of webpage (START YOUR CODE FROM HEREEEEEEEEE!!!!!!)  -->
         <div>
             <form id="contact" action="" method="post">
-                <h2>Contact Us</h2>
+                <h2 class="contact">Contact Us</h2>
                 <h3>
                     <marquee>Get reply with in 24 hours!</marquee>
                 </h3>
-                <fieldset>
-                    <label>Name:<span aria-hidden="true" class="required">*</span></label>
-                    <div class="fcf-input-group">
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Email:<span aria-hidden="true" class="required">*</span></label>
-                    <div class="fcf-input-group">
-                        <input placeholder="XYZ@email.in" type="email" tabindex="2" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Phone No.:<span aria-hidden="true" class="required">*</span></label>
-                    <div class="fcf-input-group">
-                        <input placeholder="98XXXXXX87" type="tel" tabindex="3"
-                            pattern="[0-9]{3}[0-9]{2}[0-9]{3}[0-9]{2}" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <label>Message:<span aria-hidden="true" class="required">*</span></label>
-                    <div class="fcf-input-group">
-                        <textarea name="message" type="text" id="input-message" placeholder="Message" rows="6"
-                            maxlength="3000" required></textarea>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
+                <h6>* field is required</h6>
+                <p>Name:<span>*</span><input type="text" name="name" id="first name" required placeholder="Name"></p>
+                <p>Email:<span>*</span><input type="email" name="email" id="email" required placeholder="abc@mail.com"></p>
+                <p>Mobile No.:<span>*</span><input type="tel" maxlength="10" name="mobile number" id="mobile number" required placeholder="1234567890"></p>
+                <p>Message:<span>*</span><textarea name="message" type="text" id="input-message" placeholder="Message" rows="6" maxlength="3000" required></textarea></p>
+                <input type="submit" value="SUBMIT">
+            </form>
+            <hr>
+            <form>
+                <div id="contact">
+                  <h2 class="contact">Subscribe</h2>
+                  <p>Subscribe to recieve newsletter</p>
+                  <h6>* field is required</h6>         
+                  <p>Name:<span>*</span><input type="text" name="name" id="first name" required placeholder="Name"></p>
+                  <p>Email:<span>*</span><input type="email" name="email" id="email" required placeholder="abc@mail.com"></p>
+                  <input type="submit" value="SUBSCRIBE">
+                </div>
             </form>
 
-
-
-
-
-            <form>
-                <div >
-                  <h2>Subscribe</h2>
-                  <p>Subscribe to recieve newsletter</p>
-                </div>
-              
-               
-                 <label> Name:<span area-hdden="true" class="required">*</span> </label>
-                  <input type="text" placeholder="Name" name="name" required>
-                  <label>Email Address:<span area-hidden="true" class="required">*</span></label>
-                  <input type="text" placeholder="Email address" name="mail" required>
-                  
-                </div>
-                <div>
-                  <br>
-                   <input type="submit" value="Subscribe">
-                </div>
-              </form>
-
-
-
-
-
-
-
-            <div>
+            <div class="info">
                 <h3>Chandigarh Office</h3>
-                <p><a
-                        src="https://www.google.com/maps/place/Chandigarh+University/@30.769758,76.5733646,17z/data=!3m1!4b1!4m5!3m4!1s0x390ffb140bd63e07:0x68591e334d17a988!8m2!3d30.769758!4d76.5755533">Chandigarh
-                        University,Mohali,Punjab</a><br />
-                    Zip- 140413<br />
-                    <img src="Images/call image contact us.png" width="20" height="20">
+                <p><a src="https://www.google.com/maps/place/Chandigarh+University/@30.769758,76.5733646,17z/data=!3m1!4b1!4m5!3m4!1s0x390ffb140bd63e07:0x68591e334d17a988!8m2!3d30.769758!4d76.5755533">Chandigarh University, Mohali, Punjab</a>
+                    <br> Zip- 140413<br/>
+                    <img src="Images/call image contact us.png" class="img" width="20" height="20">
                     <a href="tel:8768275487">Mobile No:8768275487</a>
                 </p>
+            
+                <h3>EMAIL ADDRESS</h3>
+                <img src="Images/gmail contact us.png" class="img" width="20" height="20">
+                <a href="mailto:info@HOPSICKLEZZ.com">info@HOPSICKLEZZ.com</a>
+                <h3>SUPPORT</h3>
+                <a href="tel:8768275487">8768275487</a><br />
+                <a href="mailto:support@HOPSICKLEZZ.com">support@HOPSICKLEZZ.com</a>
             </div>
-
-            <h3>EMAIL ADDRESS</h3>
-            <img src="Images/gmail contact us.png" width="20" height="20">
-            <a href="mailto:info@HOPSICKLEZZ.com">info@HOPSICKLEZZ.com</a>
-            <h3>SUPPORT</h3>
-            <a href="tel:8768275487">8768275487</a><br />
-            <a href="mailto:support@HOPSICKLEZZ.com">support@HOPSICKLEZZ.com</a>
-        </div>
 
 
         </div>
@@ -178,23 +111,18 @@
 
     <hr>
 
-    <footer>
-        <!-- footer section  -->
+    <footer class="footer"> <!-- footer section  -->
 
         <h2>HOPSICKLEZZ!</h2>
 
-        <div>
-            <p>Follow us!! ;] </p>
-
-            <ul>
-                <li> <a href="https://www.youtube.com/" target="_blank"> <button> <img src="Images/youtubelogo.png"
-                                alt="Youtube"> </button> </a> </li>
-                <li> <a href="https://www.spotify.com/" target="_blank"> <button> <img src="Images/spotifylogo.png"
-                                alt="spotify"> </button> </a> </li>
-                <li> <a href="https://www.instagram.com/" target="_blank"> <button> <img src="Images/instagramlogo1.png"
-                                alt="Instagram"> </button> </a> </li>
+        <div class="footer">
+            <ul class="footer">
+                <p class="p">Follow us!! ;]</p>
+                <li> <a href="https://www.youtube.com/" target="_blank"><img src="Images/youtubelogo.png" alt="Youtube"></a>| </li>
+                <li> <a href="https://www.spotify.com/" target="_blank"><img src="Images/spotifylogo.png" alt="spotify"></a>| </li>
+                <li> <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagramlogo1.png" alt="Instagram"></a> </li>
             </ul>
-        </div>
+        </div>    
 
     </footer>
 
