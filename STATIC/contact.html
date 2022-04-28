@@ -67,28 +67,31 @@
     <section>
         <!-- section for body of webpage (START YOUR CODE FROM HEREEEEEEEEE!!!!!!)  -->
         <div>
-            <form id="contact" action="" method="post">
+            <form id="contact"  action="/addContactData" method="post">
                 <h2 class="contact">Contact Us</h2>
                 <h3>
                     <marquee>Get reply with in 24 hours!</marquee>
                 </h3>
                 <h6>* field is required</h6>
-                <p>Name:<span>*</span><input type="text" name="name" id="first name" required placeholder="Name"></p>
+                <p>Name:<span>*</span><input type="text" name="name" id="name" required placeholder="Name"></p>
                 <p>Email:<span>*</span><input type="email" name="email" id="email" required placeholder="abc@mail.com"></p>
-                <p>Mobile No.:<span>*</span><input type="tel" maxlength="10" name="mobile number" id="mobile number" required placeholder="1234567890"></p>
-                <p>Message:<span>*</span><textarea name="message" type="text" id="input-message" placeholder="Message" rows="6" maxlength="3000" required></textarea></p>
-                <input type="submit" value="SUBMIT">
+                <p>Message:<span>*</span><textarea name="message" type="text" id="message" placeholder="Message" rows="6" maxlength="3000" required></textarea></p>
+                <input type="submit" value="submit">
             </form>
-            <br>
-            <form>
+
+            <hr>
+
+            <form id="newsletter"  action="/addNewsletterData" method="post">
+                
                 <div id="contact">
                   <h2 class="contact">Subscribe</h2>
                   <p>Subscribe to recieve newsletter</p>
                   <h6>* field is required</h6>         
-                  <p>Name:<span>*</span><input type="text" name="name" id="first name" required placeholder="Name"></p>
+                  <p>Name:<span>*</span><input type="text" name="name" id="name" required placeholder="Name"></p>
                   <p>Email:<span>*</span><input type="email" name="email" id="email" required placeholder="abc@mail.com"></p>
-                  <input type="submit" value="SUBSCRIBE">
+                  <input type="submit" value="submit">
                 </div>
+
             </form>
 
             <div class="info">

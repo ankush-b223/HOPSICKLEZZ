@@ -17,11 +17,14 @@ mongoose.connect("mongodb+srv://ankb223:rumni123@firstcluster.asqvg.mongodb.net/
 
 //creating variable with database schema & model
 const User = require('./model/verified_users');
-const bcrypt = require('bcryptjs/dist/bcrypt');
+const contactData = require('./model/contact_model');
+const newsletterData = require('./model/newsletter_model');
 
+const bcrypt = require('bcryptjs/dist/bcrypt');
 //creating express app , introducing bodyparser & declaring listening port
 const app = express();
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 const PORT = 5000;
 
 //declaring route paths using path dependency
@@ -78,6 +81,7 @@ app.post('/register', async (req,res)=>{
 
     //sending status code for frontend page to read
     res.json({status:'ok'});
+
     
 })
 
@@ -119,5 +123,95 @@ app.post('/login' , async (req,res)=>{
     res.json({status:'error', error: 'Invalid Username/Password'});
 
 })
+
+
+
+//contact form data rest api endpoint 
+app.post("/addContactData", async (req,res)=>{
+
+    //fetching the data to variables
+    const {name , email , mobile , message } = req.body;
+
+    try{
+        const respond = await contactData.create({
+            name ,
+            email , 
+            mobile ,
+            message 
+        })
+        console.log('Data sent to DB ',respond);
+        
+        var flag =1;
+
+
+    } catch(error){
+        throw error;
+    }
+    
+    //if data sent then redirect
+    if(flag===1){ 
+        res.redirect("successForm.html");
+    }
+
+
+});
+
+//reassigning flag to its original value
+flag=0;
+
+
+//rest api for newsletter form endpoint
+app.post('/addNewsletterData', async (req,res)=>{
+
+    const {name , email } = req.body;
+
+    try {
+        const answer = await newsletterData.create({
+
+            name ,
+            email
+
+        })
+
+        console.log('Data sent to DB ',answer);
+        
+        var flag1 =1;
+
+
+
+    } catch (error) {
+        throw error;
+    }
+
+    //if data sent then redirect
+    if(flag1===1){ 
+        res.redirect("successForm.html");
+    }
+
+})
+
+flag1 =0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
