@@ -20,6 +20,7 @@ input[type="submit"]:hover {
     margin: auto;
     font-weight: 500;
     width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 input[type="submit"] {
     background-color: #dd9260;

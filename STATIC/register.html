@@ -5,12 +5,17 @@
 
     <title>HOPSICKLEZZ!!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="darkmode.css" />
     <!-- thumbnail icon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon folder/favicon-16x16.png">
     <link rel="manifest" href="icon folder/site.webmanifest"> 
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -36,10 +41,10 @@
 
         <section> <!-- section for home ,store and contact us buttons  -->
             <nav class="navigation">
-                <a class="active" href="main.html" >HOME</a> 
-                <a href="artists.html" target="_blank">ARTISTS</a>
-                <a href="contact.html" target="_blank">CONTACT</a> 
-                <a class="log" href="login.html" target="_blank" >Login/SignUp</a>
+                <a href="main.html" >HOME</a> 
+                <a href="artists.html" >ARTISTS</a>
+                <a href="contact.html">CONTACT</a> 
+                <a class="active" class="log" href="login.html" >Login/SignUp</a>
                 <label class="switch" >
                     <input type="checkbox" onclick="myFunction()">
                     <span class="slider round"></span>
@@ -62,10 +67,10 @@
 
 
     
-    <section>
+    <section id="reg-form">
 
         <h2>REGISTER!</h2>
-        <form id="reg-form">
+        <form >
             <input type="text" autocomplete="off" id="username" placeholder="Username" /> <br>
             <input type="password" autocomplete="off" id="password" placeholder="Password" /> <br> <br>
             <button type="submit" value="Submit Form">submit</button>

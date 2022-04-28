@@ -36,12 +36,13 @@ li{
 }
 
 h1{
-    font-family: 'Luxurious Roman', cursive;
-    font-size: 50px;
+    font-family: 'Island Moments', cursive;
+    font-size: 90px;
+    margin: 0;
     text-align: center;
 }
 h2{
-    font-family: 'Luxurious Roman', cursive;
+    font-family: 'Island Moments', cursive;
     text-align: center;
 }
 .area{
