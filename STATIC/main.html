@@ -4,29 +4,20 @@
 <head>
 
     <title>HOPSICKLEZZ!!</title>
-    <link rel="stylesheet_css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- thumbnail icon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon folder/favicon-16x16.png">
     <link rel="manifest" href="icon folder/site.webmanifest"> 
-
-</head>
-
-<body>
-
     <link rel="stylesheet" href="darkmode.css" />
-    
+
 </head>
-<body>
+
+<body class="light">
     <!-- Rounded switch -->
-<label class="switch" >
-  <input type="checkbox" onclick="myFunction()">
-  <span class="slider round"></span>
-</label>
+
      
-   
-  </div>
   <script>
       function myFunction() {
          var element = document.body;
@@ -44,14 +35,17 @@
     <header> <!-- header portion >> it has 2 sections -->
 
         <section> <!-- section for home ,store and contact us buttons  -->
-            <nav>
-                <ul>
-                    <li><a href="main.html" >   <button> HOME </button>      </a> </li>
-                    <li><a href="artists.html" target="_blank">   <button> ARTISTS </button>      </a> </li>
-                    <li><a href="contact.html" target="_blank">   <button> CONTACT </button>      </a> </li>
-                </ul>
+            <nav class="navigation">
+                <a class="active" href="main.html" >HOME</a> 
+                <a href="artists.html" target="_blank">ARTISTS</a>
+                <a href="contact.html" target="_blank">CONTACT</a> 
+                <a class="log" href="login.html" target="_blank" >Login/SignUp</a>
+                <label class="switch" >
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label> 
+                <input type="text" placeholder="Search.."> 
             </nav>
-
         </section>
 
         <hr>
@@ -64,48 +58,36 @@
 
     </header>
 
-    <nav> <!-- navigation button -->
-        <button>=</button>
-    </nav>
 
-    <a href="login.html" target="_blank" > <button>Login!!</button> </a>
-
-    <section> <!-- section for body of webpage  -->
+    <section class="area"> <!-- section for body of webpage  -->
 
         <div>
             <h3>Why this website?</h3>
                 <p> Content </p>
-
         </div>
+
+        <div>
             <h3>Relative Content with reference images</h3>
             <p>content</p>
-        <div>
-
         </div>
 
     </section>
 
     <hr>
 
-    <footer> <!-- footer section  -->
+    <footer class="footer"> <!-- footer section  -->
 
         <h2>HOPSICKLEZZ!</h2>
 
-        <div>
-            <p>Follow us!! ;] </p>
-
-            <ul>
-                <li> <a href="https://www.youtube.com/" target="_blank"> <button> <img src="Images/youtubelogo.png" alt="Youtube">     </button> </a> </li>
-                <li> <a href="https://www.spotify.com/" target="_blank"> <button> <img src="Images/spotifylogo.png" alt="spotify">     </button> </a> </li>
-                <li> <a href="https://www.instagram.com/" target="_blank"> <button> <img src="Images/instagramlogo1.png" alt="Instagram">   </button> </a> </li>
+        <div class="footer">
+            <ul class="footer">
+                <p class="p">Follow us!! ;]</p>
+                <li> <a href="https://www.youtube.com/" target="_blank"><img src="Images/youtubelogo.png" alt="Youtube"></a>| </li>
+                <li> <a href="https://www.spotify.com/" target="_blank"><img src="Images/spotifylogo.png" alt="spotify"></a>| </li>
+                <li> <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagramlogo1.png" alt="Instagram"></a> </li>
             </ul>
         </div>    
 
     </footer>
-
-
 </body>
-
-
-
 </html>

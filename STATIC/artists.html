@@ -4,55 +4,44 @@
 <head>
 
     <title>HOPSICKLEZZ!!</title>
-    <link rel="stylesheet_css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="artists.css">
+    <link rel="stylesheet" href="darkmode.css" />
     <!-- thumbnail icon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon folder/favicon-16x16.png">
     <link rel="manifest" href="icon folder/site.webmanifest"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-
-</head>
-
-<body>
-
-
-  <link rel="stylesheet" href="darkmode.css" />
     
+
 </head>
-<body>
-    <!-- Rounded switch -->
-<label class="switch" >
-  <input type="checkbox" onclick="myFunction()">
-  <span class="slider round"></span>
-</label>
-     
-   
-  </div>
+
+<body class="light">
+
   <script>
       function myFunction() {
          var element = document.body;
          element.classList.toggle("dark-mode");
       }
       </script>
-  <script src="darkmode.js">
-
-
-  </script>
+  <script src="darkmode.js"></script>
 
     <script src="script.js"></script> <!-- linking external javascript file -->
 
     <header> <!-- header portion >> it has 2 sections -->
 
         <section> <!-- section for home ,store and contact us buttons  -->
-            <nav>
-                <ul>
-                    <li><a href="main.html" target="_blank">   <button> HOME </button>      </a> </li>
-                    <li><a href="artists.html" >   <button> ARTISTS </button>      </a> </li>
-                    <li><a href="contact.html" target="_blank">   <button> CONTACT </button>      </a> </li>
-                </ul>
-            </nav>
+          <nav class="navigation">
+            <a class="active" href="main.html" >HOME</a> 
+            <a href="artists.html" target="_blank">ARTISTS</a>
+            <a href="contact.html" target="_blank">CONTACT</a> 
+            <a class="log" href="login.html" target="_blank" >Login/SignUp</a>
+            <label class="switch" >
+                <input type="checkbox" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label> 
+            <input type="text" placeholder="Search.."> 
+        </nav>
 
         </section>
 
@@ -66,14 +55,14 @@
 
     </header>
 
-    <nav> <!-- navigation button -->
-        <button>=</button>
-    </nav>
-
     <section> <!-- section for body of webpage (START YOUR CODE FROM HEREEEEEEEEE!!!!!!) -->
         <div class="card-deck">
             <div class="card">
+<<<<<<< HEAD
               <img src="Images/Raa.jpg" class="card-img-top" alt="...">
+=======
+              <img src="#" class="card-img-top" alt="...">
+>>>>>>> f040aa7c5b000f5cfc35b86e54bf513bc6e81a1e
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -82,7 +71,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="Images/krsna.jpg" class="card-img-top" alt="...">
+              <img src="#" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -91,7 +80,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="Images/dino.jpg" class="card-img-top" alt="...">
+              <img src="#" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -103,7 +92,7 @@
           <hr>
           <div class="card-deck">
             <div class="card">
-              <img src="Images/raftaar.jpeg" class="card-img-top" alt="...">
+              <img src="#" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -112,7 +101,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="Images/krsna.jpg" class="card-img-top" alt="...">
+              <img src="#" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -121,7 +110,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="Images/dino.jpg" class="card-img-top" alt="...">
+              <img src="#" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -134,21 +123,20 @@
 
     <hr>
 
-    <footer> <!-- footer section  -->
+    <footer class="footer"> <!-- footer section  -->
 
-        <h2>HOPSICKLEZZ!</h2>
+      <h2>HOPSICKLEZZ!</h2>
 
-        <div>
-            <p>Follow us!! ;] </p>
+      <div class="footer">
+          <ul class="footer">
+              <p class="p">Follow us!! ;]</p>
+              <li> <a href="https://www.youtube.com/" target="_blank"><img src="Images/youtubelogo.png" alt="Youtube"></a>| </li>
+              <li> <a href="https://www.spotify.com/" target="_blank"><img src="Images/spotifylogo.png" alt="spotify"></a>| </li>
+              <li> <a href="https://www.instagram.com/" target="_blank"><img src="Images/instagramlogo1.png" alt="Instagram"></a> </li>
+          </ul>
+      </div>    
 
-            <ul>
-                <li> <a href="https://www.youtube.com/" target="_blank"> <button> <img src="Images/youtubelogo.png" alt="Youtube">     </button> </a> </li>
-                <li> <a href="https://www.spotify.com/" target="_blank"> <button> <img src="Images/spotifylogo.png" alt="spotify">     </button> </a> </li>
-                <li> <a href="https://www.instagram.com/" target="_blank"> <button> <img src="Images/instagramlogo1.png" alt="Instagram">   </button> </a> </li>
-            </ul>
-        </div>    
-
-    </footer>
+  </footer>
 
 
 </body>
