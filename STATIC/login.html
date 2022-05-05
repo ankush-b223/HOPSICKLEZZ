@@ -5,12 +5,17 @@
 
     <title>HOPSICKLEZZ!!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="darkmode.css" />
     <!-- thumbnail icon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="icon folder/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon folder/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon folder/favicon-16x16.png">
     <link rel="manifest" href="icon folder/site.webmanifest"> 
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -35,9 +40,9 @@
         <section> <!-- section for home ,store and contact us buttons  -->
             <nav class="navigation">
                 <a href="main.html" >HOME</a> 
-                <a href="artists.html" target="_blank">ARTISTS</a>
-                <a href="contact.html" target="_blank">CONTACT</a> 
-                <a class="log active" href="login.html" target="_blank" >Login/SignUp</a>
+                <a href="artists.html">ARTISTS</a>
+                <a href="contact.html">CONTACT</a> 
+                <a class="log active" href="login.html">Login/SignUp</a>
                 <label class="switch" >
                     <input type="checkbox" onclick="myFunction()">
                     <span class="slider round"></span>
@@ -58,16 +63,19 @@
     </header>
 
 
-    <section>
-
-        <h2>LOGIN!</h2>
-        <form id="login-form">
-            <input placeholder="username" type="text" id="username" > <br>
-
-            <input placeholder="password" type="password" id="password" > <br> <br>
-
-            <input type="submit" value="submit">
-
+    <section id="login-form">
+        
+        <h2 class="login">Login!</h2>
+        <form>
+            <p>Username: <input placeholder="username" type="text" id="username" ></p><br>
+            <p>Password: <input placeholder="password" type="password" id="password" ></p> <br>
+            
+            <input type="submit" value="LOGIN"><br>
+            <a href="changePass.html"><h6>Forgot Password?</h6></a>
+            <div>
+                <h5>Not yet registered with us?<br><br>Hop on!! , It's free ;)</h5>
+                <a href="register.html">REGISTER</a>
+            </div>
             
         </form>
 
@@ -110,24 +118,9 @@
             }
         </script>
 
-		<div>
-
-			<h3>Forgot password>??</h3>
-			<a href="changePass.html"> <button>Click here!</button> </a>
-
-
-		</div>
-
-        <div>
-            <h3>Not yet registered with us?</h3>
-            <h4> Hop on!! , It's free ;) </h4>
-            <a href="register.html"><button>Register!</button></a>
-        </div>
-
-
-
-
-    <hr>
+        
+    </section>
+    
 
     <footer class="footer"> <!-- footer section  -->
 

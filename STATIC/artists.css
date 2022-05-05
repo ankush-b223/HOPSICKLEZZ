@@ -4,10 +4,36 @@
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: lightgrey;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: aliceblue;
+    color: black;
 }
 .card-deck{
     display: flex;
     box-sizing: border-box;
     margin: 5px;
     padding: 10px;
+}
+.btn{
+    background-color: #dd9260;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 25%;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #4caf84;
+}
+.card-img-top{
+    height: 500px;
+    width: 100%;
+    align-content: center;
 }
