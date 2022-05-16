@@ -25,7 +25,7 @@ const bcrypt = require('bcryptjs/dist/bcrypt');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 //declaring route paths using path dependency
 app.use('/',express.static(path.join(__dirname,'static')));
