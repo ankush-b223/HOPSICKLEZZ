@@ -4,6 +4,7 @@
     border: 2px solid darkgray;
     border-radius: 10px;
     margin: auto;
+    margin-top: 20px;
     font-weight: 500;
     width: 30%;
     margin-bottom: 20px;
@@ -11,8 +12,9 @@
     padding-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 input[type="submit"] {
-    background-color: #dd9260;
+    background-color: #eb7c33;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -20,7 +22,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 form div a{
-    background-color: #dd9260;
+    background-color: #eb7c33;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -49,10 +51,10 @@ div h5{
     text-align: center;
     font-size: 35px;
     font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-    background-color: #ee8d55;
+    background-color: #eb7c33;
     padding: 20px;
     border: darkgray 1px;
     border-radius: 5px;
+    font-family: 'BioRhyme', serif;
 }

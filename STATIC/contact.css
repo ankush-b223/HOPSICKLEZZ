@@ -5,12 +5,12 @@ input[type="submit"]:hover {
     text-align: center;
     font-size: 35px;
     font-weight: 900;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-    background-color: #ee8d55;
+    background-color: #eb7c33;
     padding: 20px;
     border: darkgray 1px;
     border-radius: 5px;
+    font-family: 'BioRhyme', serif;
 }
 #contact{
     background-color: lightgray;
@@ -18,18 +18,35 @@ input[type="submit"]:hover {
     border: 2px solid darkgray;
     border-radius: 10px;
     margin: auto;
+    margin-top: 20px;
     font-weight: 500;
     width: 50%;
+    height: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#subscribe{
+    background-color: lightgray;
+    padding: 15px 15px 15px 15px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 500;
+    width: 50%;
+    height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 input[type="submit"] {
-    background-color: #dd9260;
+    background-color: #eb7c33;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 25%;
+    float: right;
+    font-family: 'BioRhyme', serif;
+    font-size: 20px;  
 }
 h6 {
     color: red;

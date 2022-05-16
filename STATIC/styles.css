@@ -39,11 +39,14 @@ h1{
     font-family: 'Island Moments', cursive;
     font-size: 90px;
     margin: 0;
+    padding: 20px;
     text-align: center;
+    background-color: lightgray;
 }
 h2{
     font-family: 'Island Moments', cursive;
     text-align: center;
+    text-decoration: underline;
 }
 .area{
     margin: 20px;
@@ -69,6 +72,10 @@ h2{
 }
 .p {
     margin: 0;
+}
+hr{
+    margin: 0;
+    border: 2px solid black;
 }
 
 
