@@ -10,6 +10,11 @@
     transition: 0.3s;
     background-color: lightgrey;
 }
+.card-img-top{
+    height: 400px;
+    width: 100%;
+    align-content: center;
+}
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     background-color: aliceblue;
@@ -34,8 +39,5 @@
 .btn:hover{
     background-color: #4caf84;
 }
-.card-img-top{
-    height: 500px;
-    width: 100%;
-    align-content: center;
-}
+
+#more {display: none;}  
