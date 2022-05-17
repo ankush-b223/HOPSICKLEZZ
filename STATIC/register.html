@@ -70,7 +70,7 @@
     <section id="reg-form">
 
         <h2 class="register">REGISTER!</h2>
-        <form >
+        <form id="RegForm">
             <u>Username:</u> <input type="text" autocomplete="off" id="username" placeholder="Username" /> <br>
             <u>Password:</u> <input type="password" autocomplete="off" id="password" placeholder="Password" /> <br> <br>
             <input type="submit" value="submit">
@@ -78,7 +78,7 @@
 
         <script>
             //getting form
-            const regForm = document.getElementById("reg-form");
+            const regForm = document.getElementById("RegForm");
 
             //on submit click event
             addEventListener('submit', registerUser);
